@@ -1,9 +1,15 @@
 #include <stdio.h>
-int main(){
-int i=11;
-int *j=&i;
-int **k=&j;
-printf("%u\n",&i);
-printf("%u\n",j);
-printf("%u\n",k);
-return 0;}
+int main (){
+    int i;
+    printf("enter any value of your choice \n");
+    scanf("%d",&i);
+    int *j;
+    j=&i;
+    printf ("Address of i=%d\n",&i);
+    printf("Address of i=%u\n",j);
+    printf("address of j =%d\n",&j);
+    printf ("value of i is %d\n",i);
+    printf("value of i=%d\n",*&i);
+    printf ("value of i =%d\n",*j);
+    return 0;
+}

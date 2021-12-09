@@ -1,27 +1,28 @@
 #include <stdio.h>
-typedef struct complex
-{
-    int real, img;
-} cmp;
-void display(cmp c1, cmp c2)
-{
-    printf("%d +%di\n", c1.real, c1.img);
-    printf("%d +%di\n", c2.real, c2.img);
-}
-int main()
-{
-    cmp c1, c2;
-    printf("enter the real number present in the complex number\n");
+int main(){
+    int kndo=3;
+    int kande=3;
+    int subigya[3][3];
+    for (int i=0;i<3;i++){
+        for (int j=0;j<3;j++){
+            printf( "the %d of %d of kandez is \n",i+1,j+1);
+            scanf("%d",&subigya[i][j]);
+            
+        }
 
-    scanf("%d", &c1.real);
-    printf("enter the imaginary number present in the complex number\n");
-    scanf("%d", &c1.img);
-
-    printf("enter the real number present in the complex number\n");
-    scanf("%d", &c2.real);
-
-    printf("enter the imaginary number present in the complex number\n");
-    scanf("%d", &c2.img);
-    display(c1, c2);
+    }
+    for (int i=0;i<3;i++){
+        for (int j=0;j<3;j++){
+        
+               printf(" %d",subigya[i][j]);
+        }
+                printf("\n");
+            
+            
+        
+            
+        }
+    
     return 0;
+        
 }
